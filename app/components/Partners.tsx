@@ -2,22 +2,19 @@ import Image from "next/image";
 import Nvidia from "../../public/nvidia.png";
 import AWS from "../../public/aws.png";
 import Microsoft from "../../public/microsoft.webp";
+import { HeroBlock } from "./HeroBlock";
 
 export default function Partners() {
   return (
     <div className="container">
       <div className="e-con-inner !pt-0">
         <section id="partners" className="py-20 md:py-28">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-semibold tracking-tight text-2xl sm:text-3xl md:text-5xl">
-              Powered by Cutting Edge AI & Cloud Technology
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              Leverage our backing from major tech programs to access
+          <HeroBlock
+            title="Powered by Cutting Edge AI & Cloud Technology"
+            description="Leverage our backing from major tech programs to access
               state-of-the-art AI and cloud technologies—plus insights from top
-              industry experts at NVIDIA, AWS, and Microsoft.
-            </p>
-          </div>
+              industry experts at NVIDIA, AWS, and Microsoft."
+          />
           <div className="mt-10 flex flex-wrap items-center justify-center gap-12 md:gap-16">
             <Image
               src={Nvidia}

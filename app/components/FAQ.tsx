@@ -4,20 +4,17 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { HeroBlock } from "./HeroBlock";
 
 export default function FAQ() {
   return (
     <div className="container">
       <div className="e-con-inner !pt-0">
         <section id="faq" className="py-20 md:py-28">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-semibold tracking-tight text-2xl sm:text-3xl md:text-5xl">
-              FAQ
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              Everything You Need to Know About ArnoldAI & Compliance
-            </p>
-          </div>
+          <HeroBlock
+            title="FAQ"
+            description="Everything You Need to Know About ArnoldAI & Compliance"
+          />
           <div className="mt-10 max-w-3xl mx-auto">
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1" className="border-purple-100">

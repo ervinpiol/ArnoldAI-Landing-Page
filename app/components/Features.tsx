@@ -1,21 +1,18 @@
 import { Check } from "lucide-react";
 import Image from "next/image";
+import { HeroBlock } from "./HeroBlock";
 
 export default function Features() {
   return (
     <div className="container">
       <div className="e-con-inner !pt-0">
         <section id="features" className="py-20 md:py-28">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-semibold tracking-tight text-2xl sm:text-3xl md:text-5xl">
-              Turn Compliance into a Business Opportunity
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              ArnoldAI is built for consulting firms, legal experts, and
+          <HeroBlock
+            title="Turn Compliance into a Business Opportunity"
+            description="ArnoldAI is built for consulting firms, legal experts, and
               startups looking to sell AI-powered solutions to clients—without
-              compliance complexity.
-            </p>
-          </div>
+              compliance complexity."
+          />
           <div className="mt-16 grid grid-cols-2 gap-4">
             <div className="border bg-white p-6 rounded-xl space-y-6">
               <Image

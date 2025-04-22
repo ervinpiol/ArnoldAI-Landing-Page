@@ -1,18 +1,16 @@
+import { HeroBlock } from "./HeroBlock";
+
 export default function Comparison() {
   return (
     <div className="container">
       <div className="e-con-inner">
         <section id="comparison" className="pb-20 md:pb-28">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-semibold tracking-tight text-2xl sm:text-3xl md:text-5xl">
-              Why Build AI the Hard Way?
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              ArnoldAI is built for consulting firms, legal experts, and
+          <HeroBlock
+            title="Why Build AI the Hard Way?"
+            description="ArnoldAI is built for consulting firms, legal experts, and
               startups looking to sell AI-powered solutions to clients—without
-              compliance complexity.
-            </p>
-          </div>
+              compliance complexity."
+          />
           <div className="mt-16 grid gap-12 md:grid-cols-2">
             <div className="space-y-8 rounded-xl border border-red-100 bg-red-50/50 p-8">
               <h3 className="text-2xl font-bold text-red-800">

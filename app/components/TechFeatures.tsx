@@ -1,21 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Check } from "lucide-react";
+import { HeroBlock } from "./HeroBlock";
 
 export default function TechFeatures() {
   return (
     <div className="container">
       <div className="e-con-inner !pt-0">
         <section id="tech-features" className="py-20 md:py-28">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-semibold tracking-tight text-2xl sm:text-3xl md:text-5xl">
-              Technical Features That Set ArnoldAI Apart
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              Built with enterprise-grade security, compliance, and scalability
+          <HeroBlock
+            title="Technical Features That Set ArnoldAI Apart"
+            description="Built with enterprise-grade security, compliance, and scalability
               in mind, ArnoldAI redefines what’s possible with AI-powered
-              systems.
-            </p>
-          </div>
+              systems."
+          />
           <div className="mt-16 grid gap-4 md:grid-cols-3">
             <Card className="border-purple-100 bg-white shadow-sm hover:shadow-md transition-shadow">
               <CardContent>

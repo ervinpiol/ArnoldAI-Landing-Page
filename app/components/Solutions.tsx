@@ -1,22 +1,21 @@
+'use client";';
+
 import Image from "next/image";
 import TabImage from "../../public/tab-image.avif";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { HeroBlock } from "./HeroBlock";
 
 export default function Solutions() {
   return (
     <div className="container">
       <div className="e-con-inner">
         <section id="solutions" className="pb-20 md:pb-2">
-          <div className="mx-auto max-w-4xl text-center">
-            <h2 className="font-semibold tracking-tight text-2xl sm:text-3xl md:text-5xl">
-              ArnoldAI is the Shopify for AI Assistants
-            </h2>
-            <p className="mt-4 text-muted-foreground">
-              A fully ISO compliant, white-label AI platform for consulting
+          <HeroBlock
+            title="ArnoldAI is the Shopify for AI Assistants"
+            description="A fully ISO compliant, white-label AI platform for consulting
               firms, legal & compliance advisors, and startups within highly
-              regulated industries
-            </p>
-          </div>
+              regulated industries"
+          />
 
           <Tabs
             defaultValue="1"
