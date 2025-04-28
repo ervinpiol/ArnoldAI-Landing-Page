@@ -124,7 +124,7 @@ export default function ScheduleDemo({
       <DialogTrigger asChild>
         <Button variant={variant}>{buttonText}</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px]">
+      <DialogContent className="sm:max-w-[425px] z-[9999]">
         <DialogHeader>
           <DialogTitle>{buttonText}</DialogTitle>
           <DialogDescription>
