@@ -1,8 +1,11 @@
+"use client";
+
 import Link from "next/link";
 import VanguardLogo from "../../../public/vanguard.webp";
 import Image from "next/image";
 import FAQ from "@/app/components/FAQ";
 import CTA from "@/app/components/CTA";
+import { motion } from "motion/react";
 
 export default function Vanguard() {
   return (
@@ -10,12 +13,21 @@ export default function Vanguard() {
       <div className="container">
         <div className="e-con-inner pb-40 md:pb-48">
           <div className="grid items-center gap-6 lg:grid-cols-2 lg:gap-10">
-            <div className="space-y-4">
-              <div className="space-y-2">
-                <h2 className="font-semibold tracking-tight text-2xl sm:text-3xl md:text-5xl">
+            <motion.div
+              className="space-y-4"
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
+              <div className="space-y-2 pb-3">
+                <h2 className="font-semibold tracking-tight text-xl sm:text-2xl md:text-4xl">
                   VanguardAI by Normark Defence
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                <p className="text-muted-foreground">
                   Built with ArnoldAI | Industry:{" "}
                   <strong className="text-black">Defence & Compliance</strong>
                 </p>
@@ -40,7 +52,7 @@ export default function Vanguard() {
                 </p>
                 <p>
                   Through collaboration with Normark Defence, we are expanding
-                  VanguardAI's impact with two key solutions:
+                  VanguardAI&apos;s impact with two key solutions:
                 </p>
                 <ul className="list-disc pl-5 space-y-1">
                   <li>
@@ -53,8 +65,8 @@ export default function Vanguard() {
                   </li>
                 </ul>
                 <p>
-                  Together, we're driving innovation and efficiency in defence
-                  compliance and market intelligence.
+                  Together, we&apos;re driving innovation and efficiency in
+                  defence compliance and market intelligence.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
@@ -65,8 +77,17 @@ export default function Vanguard() {
                   Visit
                 </Link>
               </div>
-            </div>
-            <div className="flex justify-center">
+            </motion.div>
+            <motion.div
+              className="flex justify-center"
+              initial={{ opacity: 0, x: 100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               <Image
                 src={VanguardLogo}
                 alt="Vanguard Logo"
@@ -74,7 +95,7 @@ export default function Vanguard() {
                 height={500}
                 priority
               />
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

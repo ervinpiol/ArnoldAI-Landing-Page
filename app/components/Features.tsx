@@ -1,6 +1,9 @@
+"use client";
+
 import { Check } from "lucide-react";
 import Image from "next/image";
 import { HeroBlock } from "./HeroBlock";
+import { motion } from "motion/react";
 
 export default function Features() {
   return (
@@ -13,8 +16,18 @@ export default function Features() {
               startups looking to sell AI-powered solutions to clients—without
               compliance complexity."
           />
-          <div className="mt-16 grid grid-cols-2 gap-4">
-            <div className="border bg-white p-6 rounded-xl space-y-6">
+          <div className="mt-16 grid md:grid-cols-2 gap-4">
+            <motion.div
+              className="border bg-white p-6 rounded-xl space-y-6"
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                delay: 0.2,
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               <Image
                 src="/tab-image.avif"
                 alt="AI Assistant Builder Interface"
@@ -62,9 +75,19 @@ export default function Features() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="border bg-white p-6 rounded-xl space-y-6">
+            <motion.div
+              className="border bg-white p-6 rounded-xl space-y-6"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                delay: 0.3,
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               <Image
                 src="/tab-image.avif"
                 alt="AI Assistant Builder Interface"
@@ -112,9 +135,19 @@ export default function Features() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="border bg-white p-6 rounded-xl space-y-6">
+            <motion.div
+              className="border bg-white p-6 rounded-xl space-y-6"
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                delay: 0.4,
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               <Image
                 src="/tab-image.avif"
                 alt="AI Assistant Builder Interface"
@@ -162,9 +195,19 @@ export default function Features() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="border bg-white p-6 rounded-xl space-y-6">
+            <motion.div
+              className="border bg-white p-6 rounded-xl space-y-6"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                delay: 0.5,
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               <Image
                 src="/tab-image.avif"
                 alt="AI Assistant Builder Interface"
@@ -210,7 +253,7 @@ export default function Features() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </motion.div>
           </div>
         </section>
       </div>

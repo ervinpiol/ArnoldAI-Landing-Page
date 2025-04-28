@@ -24,7 +24,6 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { toast } from "sonner";
-import { useRouter } from "next/navigation";
 
 export default function ScheduleDemo({
   variant,
@@ -41,7 +40,6 @@ export default function ScheduleDemo({
     | undefined;
   buttonText?: string;
 }) {
-  const router = useRouter();
   const [open, setOpen] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({

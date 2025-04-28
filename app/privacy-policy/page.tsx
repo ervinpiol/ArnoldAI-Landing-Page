@@ -9,15 +9,16 @@ export default function PrivacyPolicy() {
 
         <p className="text-muted-foreground">
           This Privacy Policy describes how ArnoldAI (Marvie Demit e.U)
-          ("ArnoldAI," "we," "us," or "our") collects, uses, and discloses your
-          information when you visit our website and its subdomains
-          (collectively referred to as "Website"). By accessing or using our
-          Website, you agree to the terms of this Privacy Policy.
+          (&quot;ArnoldAI,&quot; &quot;we,&quot; &quot;us,&quot; or
+          &quot;our&quot;) collects, uses, and discloses your information when
+          you visit our website and its subdomains (collectively referred to as
+          &quot;Website&quot;). By accessing or using our Website, you agree to
+          the terms of this Privacy Policy.
         </p>
 
         <div className="space-y-6 pt-8 pb-40">
           <div>
-            <h2 className="text-2xl font-semibold ">
+            <h2 className="text-2xl font-semibold">
               1. Controller and Data Controller
             </h2>
             <ul className="pt-3 space-y-1 text-muted-foreground">
@@ -29,7 +30,7 @@ export default function PrivacyPolicy() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold ">
+            <h2 className="text-2xl font-semibold">
               2. Types of Data Collected
             </h2>
             <div className="pt-3 space-y-2">
@@ -52,21 +53,22 @@ export default function PrivacyPolicy() {
                   the Users, URI addresses (Uniform Resource Identifier), time
                   of the request, method used to submit the request to the
                   server, size of the file received in response, numeric code
-                  indicating the status of the server's response (successful
-                  outcome, error, etc.), country of origin, features of the
-                  browser and the operating system used by the User, various
-                  time details per visit (e.g., the time spent on each page
-                  within the Application), and details about the path followed
-                  within the Application with special reference to the sequence
-                  of pages visited, and other parameters about the device's
-                  operating system and/or the User's IT environment.
+                  indicating the status of the server&apos;s response
+                  (successful outcome, error, etc.), country of origin, features
+                  of the browser and the operating system used by the User,
+                  various time details per visit (e.g., the time spent on each
+                  page within the Application), and details about the path
+                  followed within the Application with special reference to the
+                  sequence of pages visited, and other parameters about the
+                  device&apos;s operating system and/or the User&apos;s IT
+                  environment.
                 </p>
               </div>
             </div>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold ">
+            <h2 className="text-2xl font-semibold">
               3. Mode and Location of Data Processing
             </h2>
             <div className="pt-3 space-y-2">
@@ -96,26 +98,25 @@ export default function PrivacyPolicy() {
               <div>
                 <h3 className="text-xl font-semibold pb-1">Location</h3>
                 <p className="text-muted-foreground">
-                  The Data is processed at the Data Controller's operating
+                  The Data is processed at the Data Controller&apos;s operating
                   offices and at other locations where the parties involved in
-                  the processing are located. Depending on the User's location,
-                  data transfers may involve transferring the User Data to a
-                  country other than the User's own country. To learn more about
-                  the location of the processing of this transferred data, users
-                  can check the personal data processing details section.
+                  the processing are located. Depending on the User&apos;s
+                  location, data transfers may involve transferring the User
+                  Data to a country other than the User&apos;s own country. To
+                  learn more about the location of the processing of this
+                  transferred data, users can check the personal data processing
+                  details section.
                 </p>
               </div>
             </div>
           </div>
 
           <div>
-            <h2 className="text-2xl font-semibold ">
-              4. Purpose of Processing
-            </h2>
+            <h2 className="text-2xl font-semibold">4. Purpose of Processing</h2>
             <div className="pt-3 space-y-2 text-muted-foreground">
               <p>
-                The User's data is collected to allow the Owner to provide its
-                services, comply with its legal obligations, respond to
+                The User&apos;s data is collected to allow the Owner to provide
+                its services, comply with its legal obligations, respond to
                 enforcement requests, protect its rights and interests (or those
                 of its Users or third parties), detect any malicious or
                 fraudulent activity, as well as the following: building and
@@ -124,8 +125,8 @@ export default function PrivacyPolicy() {
               </p>
               <p>
                 For specific information about the Personal Data used for each
-                purpose, the User may refer to the section "Detailed Information
-                on the Processing of Personal Data."
+                purpose, the User may refer to the section &quot;Detailed
+                Information on the Processing of Personal Data.&quot;
               </p>
             </div>
           </div>
@@ -267,7 +268,7 @@ export default function PrivacyPolicy() {
                   be retained until such contract has been fully performed.
                 </li>
                 <li>
-                  Personal Data collected for the purposes of the Owner's
+                  Personal Data collected for the purposes of the Owner&apos;s
                   legitimate interests shall be retained as long as needed to
                   fulfill such purposes. Users may find specific information
                   regarding the legitimate interests pursued by the Owner within
@@ -419,8 +420,8 @@ export default function PrivacyPolicy() {
               of Personal Data or restriction of processing will be communicated
               by the Owner to each recipient, if any, to whom the Personal Data
               has been disclosed unless this proves impossible or involves
-              disproportionate effort. At the Users' request, the Owner will
-              inform them about those recipients.
+              disproportionate effort. At the Users&apos; request, the Owner
+              will inform them about those recipients.
             </p>
           </div>
 
@@ -432,9 +433,9 @@ export default function PrivacyPolicy() {
               <div className="space-y-1">
                 <h3 className="text-xl font-semibold ">Legal Action</h3>
                 <p className="text-muted-foreground">
-                  The User's Personal Data may be used for legal purposes by the
-                  Owner in Court or in the stages leading to possible legal
-                  action arising from improper use of this Website or the
+                  The User&apos;s Personal Data may be used for legal purposes
+                  by the Owner in Court or in the stages leading to possible
+                  legal action arising from improper use of this Website or the
                   related Services. The User declares to be aware that the Owner
                   may be required to reveal personal data upon request of public
                   authorities.
@@ -443,7 +444,7 @@ export default function PrivacyPolicy() {
 
               <div className="space-y-1">
                 <h3 className="text-xl font-semibold ">
-                  Additional Information about User's Personal Data
+                  Additional Information about User&apos;s Personal Data
                 </h3>
                 <p className="text-muted-foreground">
                   In addition to the information contained in this privacy
@@ -495,8 +496,8 @@ export default function PrivacyPolicy() {
               </p>
               <p>
                 Should the changes affect processing activities performed on the
-                basis of the User's consent, the Owner shall collect new consent
-                from the User, where required.
+                basis of the User&apos;s consent, the Owner shall collect new
+                consent from the User, where required.
               </p>
             </div>
           </div>
@@ -528,14 +529,14 @@ export default function PrivacyPolicy() {
                   Identifier), the time of the request, the method used to
                   submit the request to the server, the size of the file
                   received in response, the numeric code indicating the status
-                  of the server's response (successful outcome, error, etc.),
-                  the country of origin, the features of the browser and
+                  of the server&apos;s response (successful outcome, error,
+                  etc.), the country of origin, the features of the browser and
                   operating system used by the User, various time details per
                   visit (e.g., the time spent on each page within the
                   Application) and details about the path followed within the
                   Application with special reference to the sequence of pages
-                  visited, and other parameters about the device's operating
-                  system and/or the User's IT environment.
+                  visited, and other parameters about the device&apos;s
+                  operating system and/or the User&apos;s IT environment.
                 </p>
               </div>
 

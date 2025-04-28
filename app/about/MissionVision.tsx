@@ -1,35 +1,73 @@
+"use client";
+
+import { motion } from "motion/react";
+
 export default function MissionVision() {
   return (
     <div className="container">
       <div className="e-con-inner">
         <div className="grid md:grid-cols-2 gap-12">
-          <div className="space-y-6">
-            <div className="inline-block rounded-lg bg-purple-100 px-3 py-1 text-sm font-medium text-purple-800">
+          <div className="space-y-4">
+            <motion.h2
+              className="font-semibold tracking-tight text-2xl sm:text-3xl md:text-4xl leading-[1.2]"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                delay: 0.6,
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               Our Vision
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900">
-              AI without limits. Compliance without barriers.
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
+            </motion.h2>
+            <motion.p
+              className="text-muted-foreground leading-relaxed"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                delay: 0.8,
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               We believe in a future where AI innovation and regulatory
               compliance work together seamlessly, enabling businesses to
               harness the full potential of artificial intelligence.
-            </p>
+            </motion.p>
           </div>
-          <div className="space-y-6">
-            <div className="inline-block rounded-lg bg-purple-100 px-3 py-1 text-sm font-medium text-purple-800">
+          <div className="space-y-4">
+            <motion.h2
+              className="font-semibold tracking-tight text-2xl sm:text-3xl md:text-4xl leading-[1.2]"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                delay: 0.6,
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               Our Mission
-            </div>
-            <h2 className="text-3xl font-bold text-gray-900">
-              Empowering Regulated Industries
-            </h2>
-            <p className="text-gray-600 leading-relaxed">
+            </motion.h2>
+            <motion.p
+              className="text-muted-foreground leading-relaxed"
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                delay: 0.8,
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               We empower businesses in regulated industries to build, deploy,
               and monetize AI—without compliance slowing them down. ArnoldAI
               transforms regulatory complexity into a competitive advantage,
               allowing companies to move fast, scale efficiently, and remain
               fully compliant.
-            </p>
+            </motion.p>
           </div>
         </div>
       </div>

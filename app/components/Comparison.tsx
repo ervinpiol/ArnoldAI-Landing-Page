@@ -1,4 +1,7 @@
+"use client";
+
 import { HeroBlock } from "./HeroBlock";
+import { motion } from "motion/react";
 
 export default function Comparison() {
   return (
@@ -12,7 +15,17 @@ export default function Comparison() {
               compliance complexity."
           />
           <div className="mt-16 grid gap-12 md:grid-cols-2">
-            <div className="space-y-8 rounded-xl border border-red-100 bg-red-50/50 p-8">
+            <motion.div
+              className="space-y-8 rounded-xl border border-red-100 bg-red-50/50 p-8"
+              initial={{ opacity: 0, x: -100 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                delay: 0.2,
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               <h3 className="text-2xl font-bold text-red-800">
                 Building AI Assistants from Scratch:
               </h3>
@@ -106,8 +119,18 @@ export default function Comparison() {
                   </div>
                 </li>
               </ul>
-            </div>
-            <div className="space-y-8 rounded-xl border border-green-100 bg-green-100/50 p-8">
+            </motion.div>
+            <motion.div
+              className="space-y-8 rounded-xl border border-green-100 bg-green-100/50 p-8"
+              initial={{ opacity: 0, x: 50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{
+                delay: 0.2,
+                duration: 0.5,
+                ease: [0.25, 0.8, 0.25, 1],
+              }}
+            >
               <h3 className="text-2xl font-bold text-green-800">
                 With ArnoldAI:
               </h3>
@@ -198,7 +221,7 @@ export default function Comparison() {
                   </div>
                 </li>
               </ul>
-            </div>
+            </motion.div>
           </div>
         </section>
       </div>

@@ -7,24 +7,25 @@ export default function TermsAndConditions() {
           Effective Date: 10.03.2025
         </div>
         <p className="text-muted-foreground">
-          Welcome to arnoldai.io and its subdomains ("Website"). These Terms and
-          Conditions ("Terms") govern your use of our website and its
-          subdomains. By accessing or using our website and its subdomains, you
-          agree to be bound by these Terms. If you do not agree to these Terms,
-          please do not use our website or its subdomains. Please note that
-          these Terms do not apply to our products or services, which are
-          governed by separate terms of service.
+          Welcome to arnoldai.io and its subdomains (&quot;Website&quot;). These
+          Terms and Conditions (&quot;Terms&quot;) govern your use of our
+          website and its subdomains. By accessing or using our website and its
+          subdomains, you agree to be bound by these Terms. If you do not agree
+          to these Terms, please do not use our website or its subdomains.
+          Please note that these Terms do not apply to our products or services,
+          which are governed by separate terms of service.
         </p>
 
         <div className="space-y-6 pt-8 pb-40">
           <div>
             <h2 className="text-2xl font-semibold">1. Introduction</h2>
             <p className="pt-2 text-muted-foreground">
-              ArnoldAI (Marvie Demit e.U) ("ArnoldAI," "we," "us," or "our")
-              provides no-code, fully compliant AI assistant builder for
-              consulting firms, legal advisors, and startups. It allows you to
-              create, customize, and sell AI-powered assistants while ensuring
-              full EU AI Act, GDPR, and ISO 27001 compliance.
+              ArnoldAI (Marvie Demit e.U) (&quot;ArnoldAI,&quot; &quot;we,&quot;
+              &quot;us,&quot; or &quot;our&quot;) provides no-code, fully
+              compliant AI assistant builder for consulting firms, legal
+              advisors, and startups. It allows you to create, customize, and
+              sell AI-powered assistants while ensuring full EU AI Act, GDPR,
+              and ISO 27001 compliance.
             </p>
           </div>
 
@@ -43,7 +44,7 @@ export default function TermsAndConditions() {
             <p className="pt-3 text-muted-foreground">
               You agree to use the website and its subdomains only for lawful
               purposes and in a way that does not infringe the rights of,
-              restrict, or inhibit anyone else's use and enjoyment of the
+              restrict, or inhibit anyone else&apos;s use and enjoyment of the
               website or its subdomains. Prohibited behavior includes harassing
               or causing distress or inconvenience to any other user,
               transmitting obscene or offensive content, or disrupting the
@@ -138,11 +139,12 @@ export default function TermsAndConditions() {
             <p className="pt-3 text-muted-foreground">
               ArnoldAI reserves the right, at its sole discretion, to modify or
               replace these Terms at any time. If a revision is material,
-              ArnoldAI will try to provide at least 30 days' notice prior to any
-              new terms taking effect. What constitutes a material change will
-              be determined at the sole discretion of ArnoldAI. By continuing to
-              access or use our website or its subdomains after those revisions
-              become effective, you agree to be bound by the revised terms.
+              ArnoldAI will try to provide at least 30 days&apos; notice prior
+              to any new terms taking effect. What constitutes a material change
+              will be determined at the sole discretion of ArnoldAI. By
+              continuing to access or use our website or its subdomains after
+              those revisions become effective, you agree to be bound by the
+              revised terms.
             </p>
           </div>
 

@@ -1,12 +1,24 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "motion/react";
 
 export default function Footer() {
   return (
     <footer className="container">
       <div className="e-con-inner !pt-20 md:!pt-28">
-        <div className="flex flex-col md:flex-row w-full justify-between gap-16 !pb-12 md:!pb-16">
-          <div>
+        <div className="flex flex-col sm:flex-row w-full justify-between gap-16 !pb-12 md:!pb-16">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{
+              delay: 0.2,
+              duration: 0.5,
+              ease: [0.25, 0.8, 0.25, 1],
+            }}
+          >
             <Link href="/">
               <Image
                 src="/logo-brand.webp"
@@ -57,8 +69,18 @@ export default function Footer() {
                 </Link>
               </div>
             </div>
-          </div>
-          <div className="grid grid-cols-3">
+          </motion.div>
+          <motion.div
+            className="grid grid-cols-3"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{
+              delay: 0.2,
+              duration: 0.5,
+              ease: [0.25, 0.8, 0.25, 1],
+            }}
+          >
             <div className="space-y-4">
               <h3 className="text-sm">Use Cases</h3>
               <nav className="flex flex-col gap-3">
@@ -82,10 +104,10 @@ export default function Footer() {
                 </Link>
               </nav>
             </div>
-          </div>
+          </motion.div>
         </div>
-        <div className="border-t py-8 flex justify-between">
-          <p className="text-sm text-muted-foreground">
+        <div className="border-t py-8 flex justify-between items-center text-xs gap-6">
+          <p className="text-muted-foreground">
             © 2025 ArnoldAI All rights reserved.
           </p>
 
@@ -93,7 +115,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/privacy-policy"
-                className="text-sm text-muted-foreground hover:text-purple-700"
+                className="text-muted-foreground hover:text-purple-700"
               >
                 Privacy Policy
               </Link>
@@ -101,7 +123,7 @@ export default function Footer() {
             <li>
               <Link
                 href="/terms-and-conditions"
-                className="text-sm text-muted-foreground hover:text-purple-700"
+                className="text-muted-foreground hover:text-purple-700"
               >
                 Terms of Use
               </Link>

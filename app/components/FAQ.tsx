@@ -1,3 +1,5 @@
+"use client";
+
 import {
   Accordion,
   AccordionContent,
@@ -5,17 +7,28 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { HeroBlock } from "./HeroBlock";
+import { motion } from "motion/react";
 
 export default function FAQ() {
   return (
     <div className="container">
       <div className="e-con-inner !pt-0">
-        <section id="faq" className="py-20 md:py-28">
+        <section id="faq" className="py-32 md:py-40">
           <HeroBlock
             title="FAQ"
             description="Everything You Need to Know About ArnoldAI & Compliance"
           />
-          <div className="mt-10 max-w-3xl mx-auto">
+          <motion.div
+            className="mt-10 max-w-3xl mx-auto"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{
+              delay: 0.4,
+              duration: 0.5,
+              ease: [0.25, 0.8, 0.25, 1],
+            }}
+          >
             <Accordion type="single" collapsible className="w-full">
               <AccordionItem value="item-1" className="border-purple-100">
                 <AccordionTrigger className="font-semibold">
@@ -77,8 +90,9 @@ export default function FAQ() {
                     </li>
                   </ul>
                   <p className="mt-4">
-                    If you're looking to <strong>sell AI solutions</strong>{" "}
-                    without regulatory headaches, ArnoldAI is for you.
+                    If you`&apos;re looking to{" "}
+                    <strong>sell AI solutions</strong> without regulatory
+                    headaches, ArnoldAI is for you.
                   </p>
                 </AccordionContent>
               </AccordionItem>
@@ -91,8 +105,10 @@ export default function FAQ() {
                   <p className="mb-4">
                     The <strong className="font-semibold">EU AI Act</strong> is
                     the{" "}
-                    <strong>world's first comprehensive AI regulation</strong>,
-                    designed to ensure{" "}
+                    <strong>
+                      world`&apos;s first comprehensive AI regulation
+                    </strong>
+                    , designed to ensure{" "}
                     <strong>
                       safe, transparent, and accountable AI systems
                     </strong>{" "}
@@ -113,7 +129,7 @@ export default function FAQ() {
                 </AccordionContent>
               </AccordionItem>
             </Accordion>
-          </div>
+          </motion.div>
         </section>
       </div>
     </div>

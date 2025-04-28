@@ -13,7 +13,7 @@ import ScheduleDemo from "./ScheduleDemo";
 
 export default function Header() {
   return (
-    <div className="container fixed top-3 !py-0 z-[49]">
+    <div className="container fixed left-0 top-3 !py-0 z-[49]">
       <div className="e-con-inner !py-0">
         <div className="flex justify-between items-center p-3 bg-[#fefefe]/90 border border-zinc-200 backdrop-opacity-10 rounded-lg">
           <Link href="/">
