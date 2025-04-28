@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion } from "motion/react";
-import { Heart, DollarSign } from "lucide-react";
+import { BadgeEuro, DollarSign, User, ShieldCheck } from "lucide-react";
 import Image from "next/image";
 import TabImage from "../../public/tab-image.avif";
 import { HeroBlock } from "./HeroBlock";
@@ -10,7 +10,7 @@ import { HeroBlock } from "./HeroBlock";
 const tabsData = [
   {
     id: "ai-solutions",
-    icon: <Heart className="h-5 w-5 text-purple-600" />,
+    icon: <BadgeEuro className="h-5 w-5 text-purple-600" />,
     title: "Sell AI-powered solutions",
     description:
       "Offer AI solutions to your clients without writing a single line of code. White-label our platform under your brand.",
@@ -18,7 +18,7 @@ const tabsData = [
   },
   {
     id: "compliance",
-    icon: <Heart className="h-5 w-5 text-purple-600" />,
+    icon: <ShieldCheck className="h-5 w-5 text-purple-600" />,
     title: "100% EU AI Act & GDPR Compliant",
     description:
       "Every AI Assistant is pre-classified as low-risk or high-risk and pre-certified for CE marking—ready for final approval.",
@@ -26,7 +26,7 @@ const tabsData = [
   },
   {
     id: "pricing",
-    icon: <Heart className="h-5 w-5 text-purple-600" />,
+    icon: <User className="h-5 w-5 text-purple-600" />,
     title: "Your AI. Your Pricing. Your Business.",
     description:
       "Set custom pricing tiers and create recurring revenue streams while ArnoldAI handles compliance & infrastructure.",

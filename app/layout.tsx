@@ -22,9 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} w-full bg-zinc-50 relative overflow-x-hidden`}
-      >
+      <body className={`${inter.variable} w-full bg-zinc-50 relative`}>
         <Header />
         {children}
         <Footer />

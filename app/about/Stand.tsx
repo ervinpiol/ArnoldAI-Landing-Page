@@ -2,66 +2,25 @@
 
 import { motion } from "motion/react";
 import { HeroBlock } from "../components/HeroBlock";
+import { Check, ShieldCheck, Zap } from "lucide-react";
 
 const principles = [
   {
     title: "AI Without Barriers",
     description: "Compliance should enable innovation, not restrict it.",
-    icon: (
-      <svg
-        className="h-8 w-8 text-purple-700"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 10V3L4 14h7v7l9-11h-7z"
-        />
-      </svg>
-    ),
+    icon: <Check className="h-6 w-6 text-purple-700" />,
   },
   {
     title: "Compliance by Design",
     description:
       "AI should be transparent, secure, and aligned with industry regulations from day one.",
-    icon: (
-      <svg
-        className="h-8 w-8 text-purple-700"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-        />
-      </svg>
-    ),
+    icon: <ShieldCheck className="h-6 w-6 text-purple-700" />,
   },
   {
     title: "Speed and Scalability",
     description:
       "AI adoption should be fast, efficient, and accessible for all businesses—not just tech giants.",
-    icon: (
-      <svg
-        className="h-8 w-8 text-purple-700"
-        fill="none"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M13 10V3L4 14h7v7l9-11h-7z"
-        />
-      </svg>
-    ),
+    icon: <Zap className="h-6 w-6 text-purple-700" />,
   },
 ];
 
