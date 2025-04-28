@@ -126,9 +126,11 @@ export default function ScheduleDemo({
       </DialogTrigger>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Schedule a Demo</DialogTitle>
+          <DialogTitle>{buttonText}</DialogTitle>
           <DialogDescription>
-            Fill out this form to schedule a demo with our team.
+            {buttonText === "Schedule Demo"
+              ? "Fill out this form to schedule a demo with our team."
+              : "Fill out this form to get in touch with our team"}
           </DialogDescription>
         </DialogHeader>
         <form onSubmit={handleSubmit}>

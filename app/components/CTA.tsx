@@ -31,7 +31,7 @@ export default function CTA() {
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
               <ScheduleDemo variant="outline" />
-              <Button variant="secondary">Contact Us</Button>
+              <ScheduleDemo buttonText="Contact Sales" variant="secondary" />
             </div>
           </div>
         </motion.section>
